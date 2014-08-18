@@ -1,0 +1,77 @@
+/* ---------------------------------------------- */
+/* Styles --------------------------------------- */
+/* ---------------------------------------------- */
+
+/*Essentials*/
+
+body {
+	background-color: #666;
+    color: #fff;
+    font: 1em 'Roboto', sans-serif;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+h1, h2, h3 {
+	font-family: 'Shadows Into Light', cursive;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.75em; /*28px 28/16*/
+    line-height: 1.1428; /*32px 32/28*/
+    margin-top: 0.8571em; /*24px 24/28*/
+}
+
+/* ---------------------------------------------- */
+/* Header --------------------------------------- */
+/* ---------------------------------------------- */
+
+header {
+	height: 350px;
+}
+
+
+/* ---------------------------------------------- */
+/* Media Queries -------------------------------- */
+/* ---------------------------------------------- */
+
+
+
+@media only screen and (min-width: 321px) {
+    /* Larger mobile styles (wider than 320 pixels) */
+}
+
+@media only screen and (min-width: 600px) {
+    /* Tablet styles (wider than 600 pixels) */
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Large laptop styles (wider than 1024 pixels) */
+}
+
+@media only screen and (min-width: 1140px) {
+    /* Desktop styles (wider than 1140 pixels) */
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    /* Target all high-definition screens. */
+}
+
+@media 
+only screen and (min-width : 600px) and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min-width : 600px) and (min--moz-device-pixel-ratio: 1.5), 
+only screen and (min-width : 600px) and (min-device-pixel-ratio: 1.5) {
+    /* Target high-definition devices with screens wider than 600 pixels. */
+}
