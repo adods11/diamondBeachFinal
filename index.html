@@ -21,46 +21,70 @@
         <!-- Grid CSS -->
         <link rel="stylesheet" href="css/grid.css">
 
+        <!-- Responsive Menu CSS -->
+        <link rel="stylesheet" href="css/navigataur.css">
+
         <!-- Site CSS -->
         <link rel="stylesheet" href="css/styles.css">
+
 
 	</head>
 
 	<body>
 		<div class="outline">
 			<header>
-				<div class="wrapper">
+				<nav class="row">
+					<div class="header">
+					
+					<div class="col-12 logo">
+					</div>
+
 					<div class="row">
-						<h1 class="col-12 tagline"><a href="index.html">A Bird's Eye View Condo at Diamond Beach</a></h1>
+							<h1 class="col-12 tagline">A Bird's Eye View Condo<br /> <span>at Diamond Beach</span></h1>
 					</div><!--.row-->
-					<div class="row">
-						<ul class="col-12">
-							<li class="active"><a href="#">Ammenities</a></li>
-							<li><a href="#">Gallery</a></li>
-							<li><a href="#">Reviews</a></li>
-							<li><a href="#">Rates and Policies</a></li>
-							<li><a href="#">Contracts</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div><!--end .row-->
-				</div><!--end .wrapper-->
+
+						<input type="checkbox" id="toggle" />
+							<div class="col-12">
+								<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
+								<ul class="menu">
+									<li>
+										<a href="#">Amenities</a>
+									</li><!--
+									--><li>
+										<a href="#">Gallery</a>
+									</li><!--
+									--><li>
+										<a href="#">Rates &amp; Policies</a>
+									</li><!--
+									--><li>
+										<a href="#">Contracts</a>
+									</li><!--
+									--><li>
+										<a href="#">Contact</a>
+									</li>
+								</ul>
+							</div>
+					</div><!--end .wrapper-->
+				</nav>
 			</header>
 
 			<div class="row">
-				<section class="col-6 home_feature">
-					<div class="wrapper">
-						<div class="row">
+				<div class="wrapper">
+				<section class="col-7 home_feature">
+					
+						
 							<article class="col-12 main_about">
 								<h1>Welcome to our Luxury Condo</h1>
 								<h2>About the Condo</h2>
 								<p>Diamond Beach is a beautiful five star resort with amenities unmatched by any other Galveston destination. Our spectacular home is on the sixth floor with a large balcony, offering a bird's-eye view of West Beach and the Gulf. It is the only property on the seawall that has direct access to the beach without having to cross Seawall Boulevard.</p>
 								<article class="banner_wave"></article>
 							</article>
-						</div><!--end .row-->
+
+						
 						<article class="main_amenities">
-							<div class="row">
+							
 								<h2 class="col-12">Condo Amenities</h2>
-							</div><!--end .row-->
+							
 							<div class="row">
 								<article class="col-6 condoAmenities_one">
 									<h3>Master Bedroom</h3>
@@ -82,7 +106,7 @@
 										<li>Cable TV</li>
 										<li>Mounted Flat Screen Tvs</li>
 									</ul>
-									<h3>Master Bedroom</h3>
+									<h3>Master Bathroom</h3>
 									<ul>
 										<li>Walk-In Rain Shower</li>
 										<li>Linens and Towels</li>
@@ -114,6 +138,7 @@
 									</ul>
 								</article>
 							</div><!--end .row-->
+							<article class="banner_wave"></article>
 							<div class="row">
 								<h2 class="col-12">Diamond Beach Amenities</h2>
 							</div><!--end .row-->
@@ -146,11 +171,12 @@
 								</article>
 							</div><!--end .row-->
 						</article>
-					</div><!--end .wrapper-->
+
+					
 				</section>
 
-				<section class="col-6 home_photos">
-					<div class="wrapper">
+				<section class="col-4 home_photos">
+					
 						<div class="row">
 							<div class="photo_one">
 								<h1 class="col-12">Outdoor Pool</h1>
@@ -165,18 +191,26 @@
 								<h1 class="col-12">Game Room</h1>
 							</div>
 						</div><!--end .row-->
-					</div><!--end .wrapper-->
+					
 				</section>
-
+			</div><!--end .wrapper-->
 			</div><!--end .row-->
 
 			<footer class="row">
 				<div class="wrapper">
 					<!--Copyright Notice-->
 					<div class="col-12 copyright_notice">
-						<p>Copyright 2014 © <strong>Amanda Dodson</strong>. All Rights Reserved.</p>
+						<p>© Copyright 2014. All Rights Reserved.</p>
 					</div>
 				</div><!--end .wrapper-->
 			</footer><!--End Footer-->
+		<!-- JavaScripts -->
+
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+        <script>
+        
+        </script>
 	</body>
 </html>

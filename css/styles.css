@@ -5,7 +5,7 @@
 /*Essentials*/
 
 body {
-	background-color: #666;
+	background: url("../images/texture2.png") repeat;
     color: #fff;
     font: 1em 'Roboto', sans-serif;
     width: 100%;
@@ -26,9 +26,16 @@ a:link, a:visited {
 
 h1 {
     font-weight: bold;
-    font-size: 1.75em; /*28px 28/16*/
-    line-height: 1.1428; /*32px 32/28*/
-    margin-top: 0.8571em; /*24px 24/28*/
+    font-size: 1.5em; /*24px 22/16*/
+    line-height: 1.3; /*30px 30/24*/
+}
+
+h2 {
+    font-size: 1.35em;
+}
+
+h3 {
+    font-size: 1.1em;
 }
 
 /* ---------------------------------------------- */
@@ -36,8 +43,134 @@ h1 {
 /* ---------------------------------------------- */
 
 header {
-	height: 350px;
+    width: 100%;  
 }
+
+.tagline { 
+    background: #1a3d55;
+    font-size: 1.75em;
+    margin: 0;
+    text-align: center;
+    padding: .3571em;
+
+}
+
+.tagline a {
+    color: #fff;
+}
+
+.tagline span {
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+.logo {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background: url("../images/ray.png") center center no-repeat, url("../images/diamondLogo.png") center top no-repeat;
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+}
+
+nav li {
+    width: 20%;
+    text-align: center;
+}
+
+nav a {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #000;
+}
+
+/* ---------------------------------------------- */
+/* Content --------------------------------------- */
+/* -----------------------------------------
+
+
+/*First Section*/
+
+section {
+    width: 100%;
+    margin-bottom: 40px;
+    /*background: rgba(26, 61, 85, .2);*/
+}
+
+.home_feature {
+    margin-top: 40px;
+}
+
+.home_feature h1, 
+.home_feature h2,
+.home_feature h3, 
+.home_feature p,
+.home_feature ul,
+.home_feature li {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home_feature h1 {
+    background: #1a3d55; 
+    margin-top: 0;
+}
+
+.home_feature h2 {
+    color: #1a3d55; 
+    
+}
+
+.home_feature h3 {
+   margin-bottom: -15px;
+   margin-left: 20px;
+} 
+
+.home_feature ul {
+   margin-top: -10px;
+   margin-left: 20px;
+} 
+
+.main_amenities li {
+    list-style: disc inside none;
+}
+
+
+.home_photos {
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+
+.banner_wave {
+    height: 50px;
+    background: url("../images/wave.png") repeat-x;
+    margin-bottom: 10px;
+}
+
+.home_photos {
+    display: none;
+}
+
+
+/* ---------------------------------------------- */
+/* Footer --------------------------------------- */
+/* ---------------------------------------------- */
+
+footer {
+    text-align: center;
+    background: #1a3d55;   
+}
+
+.copyright_notice {
+    padding: 10px;
+}
+
 
 
 /* ---------------------------------------------- */
@@ -46,32 +179,30 @@ header {
 
 
 
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 20.0625em) {
     /* Larger mobile styles (wider than 320 pixels) */
+
 }
 
-@media only screen and (min-width: 600px) {
-    /* Tablet styles (wider than 600 pixels) */
+@media only screen and (min-width: 37.5em) {
+    /* Tablet styles (wider than 600 pixels) */ 
 }
 
-@media only screen and (min-width: 1024px) {
-    /* Large laptop styles (wider than 1024 pixels) */
+@media only screen and (min-width: 39.3846em) {
+    /* Large laptop styles (wider than 1024 pixels) */  
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 71.25em) {
     /* Desktop styles (wider than 1140 pixels) */
 }
 
 @media
-only screen and (-webkit-min-device-pixel-ratio: 1.5), 
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-    /* Target all high-definition screens. */
-}
-
-@media 
-only screen and (min-width : 600px) and (-webkit-min-device-pixel-ratio: 1.5), 
-only screen and (min-width : 600px) and (min--moz-device-pixel-ratio: 1.5), 
-only screen and (min-width : 600px) and (min-device-pixel-ratio: 1.5) {
-    /* Target high-definition devices with screens wider than 600 pixels. */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) { 
+    /* styles for Retina-type displays */
 }
