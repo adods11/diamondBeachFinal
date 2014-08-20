@@ -31,7 +31,7 @@
 @media only screen and (max-width: 768px){
 	.menu { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
 	.menu > li { display: block; width: 100%; margin: 0; }
-	.menu > li > a { display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	.menu > li > a { color: #1a3d55; display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
 	#toggle:checked + div .menu { display: block; opacity: 1;}
 }
@@ -43,20 +43,24 @@
 
 .menu > li > a{
 	display: block;
-	padding: 42px 20px;
+	padding: 10px 5px;
 	text-decoration: none;
 	line-height: 1.5;
+	background: #fff;
+	color: #1a3d55;
 	-webkit-transition: all 0.25s linear;
 	-moz-transition: all 0.25s linear;
 	-o-transition: all 0.25s linear;
 	transition: all 0.25s linear;
+
 }
 
 .menu > li > a:hover, .menu > li > a:focus{
-	background: #F2F2F2;
+	
 	box-shadow: inset 0px 5px #51C1F1;
 	color: #51C1F1;
-	padding: 50px 20px 34px;
+	padding: 10px 5px;
+	border: none;
 }
 
 .toggle{ 
@@ -66,7 +70,7 @@
 @media only screen and (max-width: 768px){
 	.menu{
 		background: #FFFFFF;
-		border-top: 1px solid #51C1F1;
+		border-top: 1px solid #1a3d55;
 	}
 	
 	.menu, .menu > li, .menu > li > a{
@@ -74,7 +78,7 @@
 	}
 	
 	.menu > li > a{
-		padding: 15px 15px;
+		padding: 15px 10px;
 	}
 	
 	.menu > li > a:hover, .menu > li > a:focus{
@@ -88,12 +92,10 @@
 		display: block;
 		width: 300px;
 		padding: 10px 50px;
-		background: #51C1F1;
-		-webkit-border-radius: 2px;
-		border-radius: 2px;
+		background: #fff;
 		text-align: center;
 		font-size: 12px;
-		color: #FFFFFF;
+		color: #1a3d55;
 		-webkit-transition: all 0.5s linear;
 		-moz-transition: all 0.5s linear;
 		-o-transition: all 0.5s linear;
@@ -104,7 +106,7 @@
 	}
 	
 	.toggle:hover:after{
-		background: #45ABD6;
+		background: #F2F2F2;
 	}
 	
 	#toggle:checked + div .toggle:after{
@@ -120,7 +122,9 @@
 		float: none; 
 	}
 	.toggle:after { 
-		text-align: center; width: 100%; 
-		font: 1em 'Roboto', sans-serif;
+		text-align: center; 
+		width: 100%; 
+		font: 1.2em 'Shadows Into Light', cursive;
+		font-weight: bold;
 	}
 }

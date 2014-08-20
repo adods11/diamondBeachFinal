@@ -5,11 +5,36 @@
 /*Essentials*/
 
 body {
-	background: url("../images/texture2.png") repeat;
+    height: 100%;
+    width: 100%;
     color: #fff;
     font: 1em 'Roboto', sans-serif;
     width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -2;
     -webkit-font-smoothing: antialiased;
+}
+
+.bg-img {
+    background: url('../images/mainpic.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    position: relative;
+
+}
+.bg-img:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .5; 
 }
 
 p {
@@ -46,35 +71,46 @@ header {
     width: 100%;  
 }
 
-.tagline { 
-    background: #1a3d55;
-    font-size: 1.75em;
-    margin: 0;
-    text-align: center;
-    padding: .3571em;
-
+.waveHeader {
+    width: 100%;
+    height: 114px;
+    position: relative;
+    top: 23px;
+    background: url("../images/waveHeader.png") repeat-x;
 }
 
-.tagline a {
-    color: #fff;
+.tagline { 
+    background: url("../images/bgTagline.png") repeat-x;
+    font-size: 1.75em;
+    color: #1a3d55;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0px 5px 0px;
 }
 
 .tagline span {
     font-weight: lighter;
     font-size: .9em;
+    display: block;
 }
 
 .logo {
     width: 100%;
     height: 100px;
     margin: 0 auto;
-    background: url("../images/ray.png") center center no-repeat, url("../images/diamondLogo.png") center top no-repeat;
+    background: url("../images/rayLogo.png") center center no-repeat, url("../images/diamondLogo.png") center top no-repeat;
 }
 
 /* Navigation */
 
 nav {
     width: 100%;
+}
+
+.white {
+    background: #fff;
+    border-top: 1px solid #1a3d55;
+    border-bottom: 1px solid #1a3d55;
 }
 
 nav li {
@@ -84,7 +120,7 @@ nav li {
 
 nav a {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 1.25em;
+    font-size: 1.05em;
     font-weight: bold;
     color: #000;
 }
@@ -98,12 +134,17 @@ nav a {
 
 section {
     width: 100%;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
     /*background: rgba(26, 61, 85, .2);*/
 }
 
 .home_feature {
     margin-top: 40px;
+    background: rgba(256, 256, 256, .3);
+    -moz-box-shadow:    inset 0 0 2px #91877d;
+    -webkit-box-shadow: inset 0 0 2px #91877d;
+    box-shadow:         inset 0 0 2px #91877d;
+    border-radius: 2px;
 }
 
 .home_feature h1, 
@@ -141,6 +182,11 @@ section {
     list-style: disc inside none;
 }
 
+section.home_photos {
+    padding-left: 30px;
+    padding-right: 0;
+
+}
 
 .home_photos {
     margin-top: 40px;
@@ -149,12 +195,28 @@ section {
 
 .banner_wave {
     height: 50px;
-    background: url("../images/wave.png") repeat-x;
+    background: url("../images/waveBreak.png") repeat-x;
     margin-bottom: 10px;
 }
 
 .home_photos {
     display: none;
+}
+
+.home_photos h2 {
+    background-color: #1a3d55;
+    padding: 8px 8px 8px 15px;
+    margin-bottom: 40px;
+}
+
+.photo_one,
+.photo_two,
+.photo_three,
+.photo_four {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 362px;
+    background: url("../images/outdoorpool.jpg") no-repeat;
 }
 
 
@@ -179,13 +241,22 @@ footer {
 
 
 
-@media only screen and (min-width: 20.0625em) {
-    /* Larger mobile styles (wider than 320 pixels) */
+@media only screen and (min-width: 35em) {
+    /* Larger mobile styles (wider than 560 pixels) */
+    .tagline {
+        padding: 20px 0px 10px 0px;
+    }
+    .tagline span {
+        display: inline;
+    }
 
 }
 
-@media only screen and (min-width: 37.5em) {
-    /* Tablet styles (wider than 600 pixels) */ 
+@media only screen and (min-width: 60em) {
+    /* Tablet styles (wider than 841 pixels) */
+    .home_photos {
+        display: inline;
+} 
 }
 
 @media only screen and (min-width: 39.3846em) {
