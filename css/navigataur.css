@@ -21,8 +21,7 @@
 
 .header { position: relative; }
 #toggle, .toggle { display: none; }
-.menu > li { list-style: none; display: inline-block;}
-
+.menu > li { list-style: none; display: inline-block; }
 /* Nicolas Gallagher micro clearfix */
 .clearfix:before, .clearfix:after { display: table; content: ""; }
 .clearfix:after { clear: both; }
@@ -32,8 +31,8 @@
 	.menu { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
 	.menu > li { display: block; width: 100%; margin: 0; }
 	.menu > li > a { color: #1a3d55; display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
-	#toggle:checked + div .menu { display: block; opacity: 1;}
+	.toggle { border-top: 1px solid #1a3d55; border-bottom: 1px solid #1a3d55; display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+	#toggle:checked + div .menu { display: block; opacity: 1; }
 }
 
 
@@ -47,8 +46,9 @@
 	width: 100%;
 	text-decoration: none;
 	line-height: 1.5;
-	background: #fff;
-	color: #1a3d55;
+	background: #1a3d55;
+	color: #fff;
+	border-bottom: 1px solid white;
 	-webkit-transition: all 0.25s linear;
 	-moz-transition: all 0.25s linear;
 	-o-transition: all 0.25s linear;
@@ -61,7 +61,7 @@
 	box-shadow: inset 0px 5px #51C1F1;
 	color: #51C1F1;
 	padding: 10px 5px;
-	border: none;
+	border-bottom: 1px solid white;
 }
 
 .toggle{ 
@@ -71,7 +71,6 @@
 @media only screen and (max-width: 768px){
 	.menu{
 		background: #FFFFFF;
-		border-top: 1px solid #1a3d55;
 	}
 	
 	.menu, .menu > li, .menu > li > a{
@@ -80,6 +79,8 @@
 	
 	.menu > li > a{
 		padding: 15px 10px;
+		text-align: left;
+
 	}
 	
 	.menu > li > a:hover, .menu > li > a:focus{
@@ -105,11 +106,13 @@
 	}
 	
 	.toggle:hover:after{
-		background: #F2F2F2;
+		background: #e8e8ee;
 	}
 	
 	#toggle:checked + div .toggle:after{
-		content: attr(data-close);
+    	content: "Menu \e601";
+    	font-size: 1.2em;
+    	padding: 10px 15px 10px 0;
 	}
 }
 
@@ -121,9 +124,9 @@
 		float: none; 
 	}
 	.toggle:after { 
-		text-align: center; 
+		text-align: right;
 		width: 100%; 
-		font: 1.2em 'Shadows Into Light', cursive;
+		font: 1.2em, 'Roboto', sans-serif;
 		font-weight: bold;
 	}
 }
